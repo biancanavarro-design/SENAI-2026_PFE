@@ -21,5 +21,5 @@ imagem.classList.add('imagem')
 //eventos
 let contador = 0;
 botao.addEventListener('click', () =>{
-    alert{'cliquei no botão' + contador++};
-})
+    alert{'cliquei no botão' + contador++}
+});
