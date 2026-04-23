@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import imgEstacao from '../../assets/estacao.jpg';
-import './principal.css'
+import { Link } from "react-router-dom";
+import './register.css'
 
-export default function Login() {
-    const [usuario, setUsuario] = useState('');
-    const [senha, setSenha] = useState('');
+export default function Register() {
+    const [usuario, setUsuario] = useState("");
+    const [senha, setSenha] = useState("");
+    const [confirmaSenha, setConfirmaSenha] = useState("");
 
     return (
         <section className="login-container">
@@ -19,7 +20,7 @@ export default function Login() {
 
                 <div className="login-form-side">
                     <div className="form-wrapper">
-                        <h2> Login </h2>
+                        <h2> Cadastro do Usuário </h2>
                         <p> Acesse sua conta para continuar. </p>
                        
                         <form className="login-form">
@@ -46,20 +47,28 @@ export default function Login() {
                                 />
                                 <label htmlFor="senha"> Senha </label>
                             </div>
-  
 
-                        <Link to='/dashboard' type="submit" className="btn-login">Entrar</Link>
-
-                            {/* <button type="submit" className="btn-login"> Entrar </button> */}
-                           
-                           
-                            <div className="form-footer">
-                                <span>Não tem conta? <Link to="/register"> Cadastre-se </Link></span>
+                            <div className="input-group">
+                                <input
+                                    type="password"
+                                    id="confsenha"
+                                    placeholder="senha "
+                                    value={confirmaSenha}
+                                    onChange={(e) => setConfirmaSenha(e.target.value)}
+                                />
+                                <label htmlFor="confsenha"> Confirme a Senha </label>
                             </div>
+
+                            <button type="submit" className="btn-login"> Entrar </button>
+                           
+                           
                         </form>
+                        <Link to='/' className="btn-voltar">Voltar</Link>
                     </div>
                 </div>
             </div>
         </section>
     );
 }
+
+
