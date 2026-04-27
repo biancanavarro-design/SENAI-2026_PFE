@@ -1,0 +1,52 @@
+.container-relatorio {
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #08162f, #1b2a44);
+  color: white;
+}
+
+.container-relatorio h2 {
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.container-relatorio p {
+  color: #cfd8ff;
+  margin-bottom: 30px;
+}
+
+.grafico {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+}
+
+.tabela-box {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background: rgba(255,255,255,0.15);
+}
+
+th, td {
+  padding: 18px;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+tbody tr:hover {
+  background: rgba(255,255,255,0.04);
+}
