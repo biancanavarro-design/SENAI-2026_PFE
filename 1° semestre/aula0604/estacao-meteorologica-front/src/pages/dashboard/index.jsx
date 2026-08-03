@@ -1,5 +1,5 @@
 import Header from '../../components/header'
-import './dashboard.css'
+import GraficoBarra from '../../components/graficoBarra'
 
 
 export default function Dashboard(){
@@ -33,7 +33,7 @@ export default function Dashboard(){
             <h6>Gráficos</h6>
 
             <div>
-                {/* colocar gráficos */}
+                <GraficoBarra/>
             </div>
         </section>
 
